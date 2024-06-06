@@ -1,5 +1,12 @@
 function factorial(num) {
-  return 0;
+  if (num === 0 || num === 1) {
+    return 1;
+  } else {
+    for (let i = num - 1; i >= 1; i--) {
+      num *= i;
+    }
+    return num;
+  }
 }
 
 module.exports = factorial;
